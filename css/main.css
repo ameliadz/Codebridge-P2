@@ -1,0 +1,187 @@
+body{
+	background-color: black;
+  	background-image:
+    radial-gradient(white 20%, transparent 30%), 
+    radial-gradient(white 20%, transparent 30%);
+ 	background-size: 40px 40px;
+  	background-position: 0 0, 20px 20px;
+}
+.parent {
+	margin-top: 70px;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	font-family: 'Source Sans Pro', sans-serif;
+}
+form {
+	border: groove #845ec2;
+	border-radius: 10px;
+	width: 400px;
+	height: 450px;
+	display: grid;
+	grid-template-columns: 25% 25% 25% 25%; /* 4 */
+	grid-template-rows: 20% 16% 16% 16% 16% 16%; /* 6 */
+	background-color: #845ec2;
+	box-shadow: 5px 5px 5px black;
+}
+button {
+	margin: 5px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	border-radius: 10px;
+	font-size: 25pt;
+	line-height: 40px;
+	padding-left: 10px;
+	border: 2px outset gray;
+	transition-duration: 0.3s;
+	font-family: 'Source Sans Pro', sans-serif;
+	/* can i center text vertically in a button? (besides with line height?) how pls */
+}
+button:focus {
+	outline: 2px floralwhite;
+}
+button:active {
+	border: 2px inset gray;
+}
+.number {
+	text-align: left;
+	color: white;
+	text-shadow: 1px 2px 5px gray;
+}
+.equation {
+	text-align: center;
+	color: white;
+	text-shadow: 1px 2px 5px gray;
+}
+#display {
+	margin: 5px;
+	text-align: right;
+	padding-right: 20px;
+	border-radius: 10px;
+	grid-column: 1 / 5;
+	grid-row: 1 / 2;
+	font-size: 30pt;
+	font-family: 'Source Sans Pro', sans-serif;
+	background-color: #cfc1e7;
+}
+#display:focus {
+	outline: 2px floralwhite;
+}
+#clear {
+	background-color: #aa60c8;
+}
+#clear:hover {
+	background-color: #cc9fde;
+}
+#pos-neg {
+	background-color: #cf63cc;
+}
+#pos-neg:hover {
+	background-color: #e3a4e1;
+}
+#average {
+	background-color: #d665ad;
+}
+#average:hover {
+	background-color: #e8a8d1;
+}
+#divide {
+	background-color: #dd678c;
+}
+#divide:hover {
+	background-color: #edacc1;
+}
+#seven {
+	background-color: #695fc6;
+}
+#seven:hover {
+	background-color: #a49edc;
+}
+#eight {
+	background-color: #6174cb;
+}
+#eight:hover {
+	background-color: #a1ace0;
+}
+#nine {
+	background-color: #6395cf;
+}
+#nine:hover {
+	background-color: #a4c1e3;
+}
+#multiply {
+	background-color: #e46b6a;
+}
+#multiply:hover {
+	background-color: #f1b2b2;
+}
+#four {
+	background-color: #64b8d4;
+}
+#four:hover {
+	background-color: #a6d6e6;
+}
+#five {
+	background-color: #66d8d5;
+}
+#five:hover {
+	background-color: #aae9e8;
+}
+#six {
+	background-color: #67ddb8;
+}
+#six:hover {
+	background-color: #acedd8;
+}
+#subtract {
+	background-color: #eb976c;
+}
+#subtract:hover {
+	background-color: #f5ccb7;
+}
+#one {
+	background-color: #69e29a;
+}
+#one:hover {
+	background-color: #b0f0ca;
+}
+#two {
+	background-color: #6be67a;
+}
+#two:hover {
+	background-color: #b4f2bb;
+}
+#three {
+	background-color: #80eb6c;
+}
+#three:hover {
+	background-color: #c1f5b7;
+}
+#add {
+	background-color: #f2c66e;
+}
+#add:hover {
+	background-color: #f9e5bc;
+}
+#zero {
+	grid-column: 1 / 3;
+	grid-row: 6 / 7;
+	background-color: #a7ef6e;
+}
+#zero:hover {
+	background-color: #d5f7ba;
+}
+#point {
+	background-color: #cff46f;
+}
+#point:hover {
+	background-color: #e9fabe;
+}
+#equals {
+	background-color: #f9f871;
+}
+#equals:hover {
+	background-color: #fcfcc2;
+}

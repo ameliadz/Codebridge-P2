@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link href="css/main.css" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+	<title>Math in Space</title>
+
+</head>
+<body>
+	<div class="parent">
+		<form name="Calc">
+			<input type="text" name="display" size="16" id="display">
+			<button type="button" name="clear" id="clear" class="equation" onclick="allclear()">
+				AC
+			</button>
+			<button type="button" name="pos-neg" id="pos-neg" class="equation" value="" onclick="posneg()">
+				+/-
+			</button>
+			<button type="button" name="average" id="average" class="equation" value="avg" onclick="avg()">
+				avg 
+			</button>
+			<button type="button" name="divide" id="divide" class="equation" value="/" onclick="Calc.display.value += ' / '">
+				/
+			</button>
+			<button type="button" name="seven" id="seven" class="number" value="7" onclick="Calc.display.value += '7'">
+				7
+			</button>
+			<button type="button" name="eight" id="eight" class="number" value="8" onclick="Calc.display.value += '8'">
+				8
+			</button>
+			<button type="button" name="nine" id="nine" class="number" value="9" onclick="Calc.display.value += '9'">
+				9
+			</button>
+			<button type="button" name="multiply" id="multiply" class="equation" value="*" onclick="Calc.display.value += ' * '">
+				*
+			</button>
+			<button type="button" name="four" id="four" class="number" value="4" onclick="Calc.display.value += '4'">
+				4
+			</button>
+			<button type="button" name="five" id="five" class="number" value="5" onclick="Calc.display.value += '5'">
+				5
+			</button>
+			<button type="button" name="six" id="six" class="number" value="6" onclick="Calc.display.value += '6'">
+				6
+			</button>
+			<button type="button" name="subtract" id="subtract" class="equation" value="-" onclick="Calc.display.value += ' - '">
+				-
+			</button>
+			<button type="button" name="one" id="one" class="number" value="1" onclick="Calc.display.value += '1'">
+				1
+			</button>
+			<button type="button" name="two" id="two" class="number" value="2" onclick="Calc.display.value += '2'">
+				2
+			</button>
+			<button type="button" name="three" id="three" class="number" value="3" onclick="Calc.display.value += '3'">
+				3
+			</button>
+			<button type="button" name="add" id="add" class="equation" value="+" onclick="Calc.display.value += ' + '">
+				+
+			</button>
+			<button type="button" name="zero" id="zero" class="number" value="0" onclick="Calc.display.value += '0'">
+				0
+			</button>
+			<button type="button" name="point" id="point" class="number" value="." onclick="Calc.display.value += '.'">
+				.
+			</button>
+			<button type="button" name="equals" id="equals" class="equation" value="=" onclick="Calc.display.value = eval(Calc.display.value)">
+				=
+			</button>
+		</form>
+	</div>
+
+<script src="js/main.js"></script>
+</body>
+</html>
